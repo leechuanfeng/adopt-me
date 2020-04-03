@@ -1,13 +1,8 @@
 import React from "react";
-import {Link} from '@reach/router'
+import { Link } from "@reach/router";
 
 export default function Pet({ name, animal, breed, media, location, id }) {
-  // return React.createElement("div", {}, [
-  //   React.createElement("h1", {}, name),
-  //   React.createElement("h2", {}, animal),
-  //   React.createElement("h3", {}, breed),
-  // ]);
-  let hero = 'http://placecorgi.com/300/300';
+  let hero = "http://placecorgi.com/300/300";
   if (media.length) {
     hero = media[0].small;
   }
