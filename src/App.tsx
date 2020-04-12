@@ -16,8 +16,8 @@ const App = () => {
             <Link to="/">Adopt Me!</Link>
           </header>
           <Router>
-            <SearchParams path="/" />
-            <Details path="/details/:id" />
+            <SearchParams path="/"/>
+            <Details path="/details/:id"/>
           </Router>
         </div>
       </ThemeContext.Provider>
@@ -25,4 +25,4 @@ const App = () => {
   );
 };
 
-render(<App />, document.getElementById("root"));
+render(<App/>, document.getElementById("root"));
